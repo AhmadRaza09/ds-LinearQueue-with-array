@@ -20,4 +20,16 @@ public class LinearQueue {
         }
         return false;
     }
+
+    /**
+     * This method will tell the queue is full or not
+     *
+     * @return
+     */
+    public boolean isFull() {
+        if (topOfQueue == array.length - 1) {
+            return true;
+        }
+        return false;
+    }
 }

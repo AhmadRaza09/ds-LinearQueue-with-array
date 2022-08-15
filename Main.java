@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         LinearQueue linearQueue = new LinearQueue(5);
-        boolean isEmpty = linearQueue.isEmpty();
+        boolean isFull = linearQueue.isFull();
 
-        System.out.println(isEmpty);
+        System.out.println(isFull);
     }
 }
