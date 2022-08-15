@@ -9,7 +9,10 @@ public class Main {
 
         //get element from the queue
         System.out.println("--------------------------------------------Dequeue");
-        int result = linearQueue.dequeue();
+        int result = linearQueue.front();
+        System.out.println(result);
+
+        result = linearQueue.front();
         System.out.println(result);
 
         result = linearQueue.dequeue();
@@ -18,14 +21,13 @@ public class Main {
         result = linearQueue.dequeue();
         System.out.println(result);
 
-        result = linearQueue.dequeue();
+        result = linearQueue.front();
         System.out.println(result);
 
-        result = linearQueue.dequeue();
+        result = linearQueue.front();
         System.out.println(result);
 
-        result = linearQueue.dequeue();
-        System.out.println(result);
+        linearQueue.enqueue(1);
 
     }
 }

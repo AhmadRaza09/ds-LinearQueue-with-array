@@ -1,7 +1,7 @@
 public class LinearQueue {
     private int[] array;
-    private int topOfQueue;
-    private int beginningOfQueue;
+    public int topOfQueue;
+    public int beginningOfQueue;
 
     public LinearQueue(int size) {
         array = new int[size];
@@ -55,7 +55,7 @@ public class LinearQueue {
     }
 
     /**
-     * This method will return the beginning element of the queue
+     * This method will return the beginning element of the queue and point beginningOfQueue to the next element
      *
      * @return
      * @throws Exception
@@ -69,6 +69,22 @@ public class LinearQueue {
 
         //point to the next index of array
         beginningOfQueue = beginningOfQueue + 1;
+
+        return value;
+    }
+
+    /**
+     * This method will return the beginning element of the array
+     *
+     * @return
+     * @throws Exception
+     */
+    public int front() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Queue is Emppty");
+        }
+
+        int value = array[beginningOfQueue];
 
         return value;
     }
