@@ -1,8 +1,11 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         LinearQueue linearQueue = new LinearQueue(5);
-        boolean isFull = linearQueue.isFull();
-
-        System.out.println(isFull);
+        linearQueue.enqueue(1);
+        linearQueue.enqueue(2);
+        linearQueue.enqueue(3);
+        linearQueue.enqueue(4);
+        linearQueue.enqueue(5);
+        linearQueue.enqueue(6);
     }
 }

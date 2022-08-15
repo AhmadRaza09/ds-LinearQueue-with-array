@@ -32,4 +32,25 @@ public class LinearQueue {
         }
         return false;
     }
+
+    /**
+     * This method will add the element in queue.
+     *
+     * @param value
+     * @throws if queue full then throws Exception
+     */
+    public void enqueue(int value) throws Exception {
+        if (isFull()) {
+            throw new Exception("Queue is full");
+        } else if (isEmpty()) {
+
+            //point top of queue to the first index of array
+            beginningOfQueue = beginningOfQueue + 1;
+        }
+
+        //point next index of array
+        topOfQueue = topOfQueue + 1;
+
+        array[topOfQueue] = value;
+    }
 }
