@@ -6,6 +6,26 @@ public class Main {
         linearQueue.enqueue(3);
         linearQueue.enqueue(4);
         linearQueue.enqueue(5);
-        linearQueue.enqueue(6);
+
+        //get element from the queue
+        System.out.println("--------------------------------------------Dequeue");
+        int result = linearQueue.dequeue();
+        System.out.println(result);
+
+        result = linearQueue.dequeue();
+        System.out.println(result);
+
+        result = linearQueue.dequeue();
+        System.out.println(result);
+
+        result = linearQueue.dequeue();
+        System.out.println(result);
+
+        result = linearQueue.dequeue();
+        System.out.println(result);
+
+        result = linearQueue.dequeue();
+        System.out.println(result);
+
     }
 }

@@ -53,4 +53,23 @@ public class LinearQueue {
 
         array[topOfQueue] = value;
     }
+
+    /**
+     * This method will return the beginning element of the queue
+     *
+     * @return
+     * @throws Exception
+     */
+    public int dequeue() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Queue is Emppty");
+        }
+
+        int value = array[beginningOfQueue];
+
+        //point to the next index of array
+        beginningOfQueue = beginningOfQueue + 1;
+
+        return value;
+    }
 }
