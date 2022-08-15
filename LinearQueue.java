@@ -7,6 +7,16 @@ public class LinearQueue{
         array = new int[size];
         topOfQueue = -1;
         beginningOfQueue = -1;
-        System.out.println("Created Linear Queue");
+    }
+
+    /**
+     * This method will tell the is queue is empty of not
+     * @return boolean
+     */
+    public boolean isEmpty(){
+        if(beginningOfQueue == -1 || beginningOfQueue == array.length){
+            return true;
+        }
+        return false;
     }
 }
