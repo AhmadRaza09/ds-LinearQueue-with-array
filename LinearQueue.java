@@ -1,7 +1,7 @@
 public class LinearQueue {
     private int[] array;
-    public int topOfQueue;
-    public int beginningOfQueue;
+    private int topOfQueue;
+    private int beginningOfQueue;
 
     public LinearQueue(int size) {
         array = new int[size];
